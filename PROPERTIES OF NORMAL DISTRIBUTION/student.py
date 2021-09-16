@@ -32,6 +32,8 @@ fig.add_trace(go.Scatter(x=[first_sd_start, first_sd_start], y=[0, 0.17], mode="
 fig.add_trace(go.Scatter(x=[first_sd_end, first_sd_end], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 1"))
 fig.add_trace(go.Scatter(x=[second_sd_start, second_sd_start], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 2"))
 fig.add_trace(go.Scatter(x=[second_sd_end, second_sd_end], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 2"))
+fig.add_trace(go.Scatter(x=[third_sd_start, third_sd_start], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 3"))
+fig.add_trace(go.Scatter(x=[third_sd_end, third_sd_end], y=[0, 0.17], mode="lines", name="STANDARD DEVIATION 3"))
 fig.show()
 
 list_of_data_within_1_sd = [result for result in data if result > first_sd_start and result < first_sd_end]
